@@ -1,0 +1,107 @@
+/* ========== Global Styles ========== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ========== Content Div ========== */
+.content {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #fff; /* White background for the content */
+  border: 5px solid #333;
+  z-index: 1; /* Below the overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* ========== Smiley Face ========== */
+.face {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+/* Eyes */
+.eye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 60px;
+}
+
+.left-eye {
+  left: 50px;
+}
+
+.right-eye {
+  right: 50px;
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border-bottom: 5px solid #000;
+  border-radius: 0 0 50px 50px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ========== Decorative Text and Link ========== */
+.texture-text {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #333;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.decorative-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  border: 1px solid #333;
+  padding: 2px 5px;
+}
+
+/* ========== Overlay Div ========== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 2; /* Positioned above the content div */
+}
+
+/* ========== Fade-in Animation ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
