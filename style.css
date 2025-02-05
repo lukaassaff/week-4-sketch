@@ -1,8 +1,7 @@
-/* ========== Global Styles ========== */
 body {
   margin: 0;
   padding: 0;
-  background-color: #000; /* Black background */
+  background-color: #000;
   font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
@@ -11,14 +10,13 @@ body {
   overflow: hidden;
 }
 
-/* ========== Content Div ========== */
 .content {
   position: relative;
   width: 300px;
   height: 300px;
-  background-color: #fff; /* White background for the content */
+  background-color: #fff;
   border: 5px solid #333;
-  z-index: 1; /* Below the overlay */
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +24,6 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-/* ========== Smiley Face ========== */
 .face {
   position: relative;
   width: 200px;
@@ -36,7 +33,6 @@ body {
   border-radius: 50%;
 }
 
-/* Eyes */
 .eye {
   position: absolute;
   width: 20px;
@@ -54,7 +50,6 @@ body {
   right: 50px;
 }
 
-/* Mouth */
 .mouth {
   position: absolute;
   width: 100px;
@@ -66,7 +61,6 @@ body {
   transform: translateX(-50%);
 }
 
-/* ========== Decorative Text and Link ========== */
 .texture-text {
   font-size: 12px;
   letter-spacing: 3px;
@@ -75,28 +69,16 @@ body {
   user-select: none;
 }
 
-.decorative-link {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  font-size: 12px;
-  color: #333;
-  border: 1px solid #333;
-  padding: 2px 5px;
-}
-
-/* ========== Overlay Div ========== */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  z-index: 2; /* Positioned above the content div */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2;
 }
 
-/* ========== Fade-in Animation ========== */
 @keyframes fadeIn {
   from {
     opacity: 0;
